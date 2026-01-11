@@ -8,7 +8,9 @@ on:
 jobs:
   generate-report:
     runs-on: ubuntu-latest
-    
+    permissions:
+      contents: write  # 允许 git push
+      
     steps:
       # 1. 检出代码 (启用写权限)
       - name: Checkout repository
@@ -35,9 +37,6 @@ jobs:
 
       # 4. 生成报告 (关键修复)
       - name: Generate report
-        env:
-          # 添加必要的环境变量 (示例)
-          API_KEY: ${{ secrets.REPORT_API_KEY }}
         run: |
           npm run build    # ✅ 正确构建命令 (如有需要)
           npm run start # ✅ 替换为实际的报告生成命令
