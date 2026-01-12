@@ -12,7 +12,7 @@ export const generateREADME = () => {
 		return `- [[**${ liver }**]](./docx/${ liver }):\n` +
 			readdirSync( liverDocxDirPath ).map(
 				docx => {
-					const showTitle = basename( docx, '.md' ).replace( / /g, '%20' );
+					const showTitle = basename( docx, '.md' );
 					const docxPath = encodeURI( `./docx/${ liver }/${ docx }` );
 					return `\t- [${ showTitle }](${ docxPath })`;
 				},
@@ -153,6 +153,60 @@ npm run dev
 \`\`\`
 npm run start
 \`\`\`
+
+### 自定义主播解析
+
+> 1. fork 项目
+> 2. 将 fork 的项目拉取到本地
+> 3. 启动项目
+
+---
+
+> 1. 进入文件 \`src/module/matchData/handleParseMapper.ts\` 文件
+> 2. 在 \`handleParseMapper\` 数组中新增一个对象, 对象必须包含以下内容:
+
+| 属性       | 类型                                                        | 描述             |
+| ---------- | ----------------------------------------------------------- | ---------------- |
+| \`uid\`      | \`number\`                                                    | 上传者的uid      |
+| \`userName\` | \`string\`                                                    | 上传者的用户名称 |
+| \`onParse\`  | \`( item: UnparseRecordItem ) => Promise<RecordItem | null>\` | 解析函数         |
+
+\`\`\`ts
+export interface IParseItem {
+\tuid: number;
+\tuserName: string;
+\tonParse: ( item: UnparseRecordItem ) => Promise<RecordItem | null>;
+}
+\`\`\`
+
+---
+
+**\`onParse\` 函数**
+
+\`onParse\` 函数传入的参数是一个未被解析的原始视频数据 \`UnparseRecordItem\` , 内容如下:
+
+| 属性           | 类型     | 描述                          |
+| -------------- | -------- | ----------------------------- |
+| \`aid\`          | \`number\` | 视频的 av 号                  |
+| \`bvId\`         | \`string\` | 视频的 bv 号                  |
+| \`publishTime\`  | \`number\` | 视频的发布时间 (毫秒级时间戳) |
+| \`liveDuration\` | \`number\` | 视频的时长 (秒)               |
+| \`title\`        | \`string\` | 视频标题                      |
+
+\`onParse\` 函数需要返回一个解析完成后视频数据 \`RecordItem\` , 内容如下:
+
+| 属性           | 类型            | 描述                          |
+| -------------- | --------------- | ----------------------------- |
+| \`aid\`          | \`number\`        | 视频的 av 号                  |
+| \`bvId\`         | \`string\`        | 视频的 bv 号                  |
+| \`publishTime\`  | \`number\`        | 视频的发布时间 (毫秒级时间戳) |
+| \`liveDuration\` | \`number\`        | 视频的时长 (秒)               |
+| \`title\`        | \`string\`        | 视频标题                      |
+| \`liveTime\`     | \`number\`        | 直播的日期 (毫秒级时间戳)     |
+| \`playGame\`     | \`Array<string>\` | 游玩的游戏列表                |
+| \`liver\`        | \`string\`        | 主播                          |
+
+需要解析的数据为: \`liveTime\`, \`playGame\` 和 \`liver\`, 剩下的数据直接解构 \`UnparseRecordItem\` 即可.
 	`.trim();
 	
 	const readmeFilePath = resolve( cwd(), 'README.md' );
