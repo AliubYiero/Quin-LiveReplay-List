@@ -1,4 +1,4 @@
-import { join, resolve, basename } from 'node:path';
+import { basename, join, resolve } from 'node:path';
 import { cwd } from 'node:process';
 import { readdirSync } from 'node:fs';
 import { writeFileSync } from 'fs';
@@ -40,6 +40,7 @@ ${ group }
 
 ## 支持的录播Man
 
+- Mr.Quin: https://space.bilibili.com/15810
 - 胧黑: https://space.bilibili.com/245335
 - 自行车二层: https://space.bilibili.com/1400350754
 

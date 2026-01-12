@@ -11,10 +11,6 @@ export class SpellingCorrection {
 		this.spellingCorrectionMapper = JSON.parse( spellingCorrectionContent );
 	}
 	
-	private check( game: string ) {
-		return Boolean( this.spellingCorrectionMapper[ game ] );
-	}
-	
 	/**
 	 * 纠正错误的游戏名, 返回正确的游戏名
 	 */
@@ -24,5 +20,9 @@ export class SpellingCorrection {
 		}
 		
 		return this.spellingCorrectionMapper[ game ];
+	}
+	
+	private check( game: string ) {
+		return Boolean( this.spellingCorrectionMapper[ game ] );
 	}
 }

@@ -1,5 +1,9 @@
 import { RecordItem, UnparseRecordItem } from '../../interface/IRecord.ts';
-import { cleanGameName, extractLiveDate, extractLiver } from './handleParseUtils.ts';
+import {
+	cleanGameName,
+	extractLiveDate,
+	extractLiver,
+} from './handleParseUtils.ts';
 
 export interface IParseItem {
 	uid: number;
@@ -77,6 +81,29 @@ export const handleParseMapper: IParseItem[] = [
 				liveTime: liveTime,
 				playGame: playGameList,
 				liver,
+			};
+		},
+	},
+	{
+		uid: 15810,
+		userName: 'Mr.Quin',
+		onParse: async ( item: UnparseRecordItem ) => {
+			// play Game
+			const { title } = item;
+			const gameMatch = title.match( /(【Quin】|【Mr.Quin】)(.*)(【?直播录像|直播实况|实况)/ )
+				|| title.match( /(【Quin】|【Mr.Quin】|【Mr.Quin X 鱼炒剩饭】)(.*)/ );
+			if ( !( Array.isArray( gameMatch ) && gameMatch[ 2 ] ) ) return null;
+			// 4. 清洗并分割游戏名称
+			const playGameList = gameMatch[ 2 ]
+				.split( /[+&]/g )
+				.map( cleanGameName )
+				.filter( name => name.length > 0 ); // 过滤空名称
+			
+			return {
+				...item,
+				liveTime: item.publishTime,
+				playGame: playGameList,
+				liver: 'Mr.Quin',
 			};
 		},
 	},

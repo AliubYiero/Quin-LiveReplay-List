@@ -29,3 +29,4 @@ export function formatTime( second: number ): string {
 	
 	return `${ pad( hours ) }:${ pad( minutes ) }:${ pad( seconds ) }`;
 }
+ 

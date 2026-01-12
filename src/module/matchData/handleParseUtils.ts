@@ -59,7 +59,9 @@ export function cleanGameName( gameName: string ): string {
 	return gameName
 		.replace( /（[^）]*）/g, '' ) // 移除中文括号内容
 		.replace( /\([^)]*\)/g, '' ) // 移除英文括号内容
+		.replace( /【[^】]*】/g, '' ) // 移除英文括号内容
 		.replace( /[—-]+(残缺|已爆炸)$/, '' ) // 移除后缀标记
 		.replace( /^残缺[—-]+/, '' ) // 移除前缀标记
+		.replace( /(初体验|【?直播录像】?|直播实况|实况)/, '' ) // 移除后缀标记
 		.trim();
 }

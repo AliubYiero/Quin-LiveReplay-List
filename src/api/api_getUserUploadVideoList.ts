@@ -25,6 +25,6 @@ export async function api_getUserUploadVideoList(
 	const response = res.data.data as IUserUploadVideo;
 	const hasNext = response.page.num * response.page.size < response.page.total;
 	return Object.assign( response, {
-		hasNext
+		hasNext,
 	} );
 }

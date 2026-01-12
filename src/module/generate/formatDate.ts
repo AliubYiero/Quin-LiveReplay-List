@@ -14,17 +14,17 @@
  * formatDate(-1)            // "1969-12-31"（有效时间戳，即使为负）
  * formatDate(8640000000000000) // "----/--/--"（超出 Date 有效范围）
  */
-export function formatDate(timestamp: number): string {
+export function formatDate( timestamp: number ): string {
 	// 检查是否为有效有限数值
-	if (!isFinite(timestamp)) {
+	if ( !isFinite( timestamp ) ) {
 		return '----/--/--';
 	}
 	
 	// 创建一个日期对象（内部存储为UTC时间）
-	const date = new Date(timestamp);
+	const date = new Date( timestamp );
 	
 	// 检查 Date 是否有效
-	if (isNaN(date.getTime())) {
+	if ( isNaN( date.getTime() ) ) {
 		return '----/--/--';
 	}
 	
@@ -32,7 +32,7 @@ export function formatDate(timestamp: number): string {
 	// 方法：获取UTC时间，然后加上8小时得到北京时间
 	const beijingOffset = 8 * 60 * 60 * 1000; // 8小时的毫秒数
 	const beijingTime = date.getTime() + beijingOffset;
-	const beijingDate = new Date(beijingTime);
+	const beijingDate = new Date( beijingTime );
 	
 	// 使用UTC方法来获取北京时间的年、月、日
 	const year = beijingDate.getUTCFullYear();
@@ -40,25 +40,25 @@ export function formatDate(timestamp: number): string {
 	const day = beijingDate.getUTCDate();
 	
 	// 验证提取的日期组件是否合理
-	if (!Number.isInteger(year) || year < 0 || year > 9999) {
+	if ( !Number.isInteger( year ) || year < 0 || year > 9999 ) {
 		return '----/--/--';
 	}
 	
 	// 格式化填充函数
-	const pad = (num: number, width: number): string => {
-		const str = String(num);
-		return str.length >= width ? str : '0'.repeat(width - str.length) + str;
+	const pad = ( num: number, width: number ): string => {
+		const str = String( num );
+		return str.length >= width ? str : '0'.repeat( width - str.length ) + str;
 	};
 	
 	// 格式化各部分
-	const yearStr = pad(year, 4);
-	const monthStr = isNaN(month) || month < 1 || month > 12 ? '--' : pad(month, 2);
-	const dayStr = isNaN(day) || day < 1 || day > 31 ? '--' : pad(day, 2);
+	const yearStr = pad( year, 4 );
+	const monthStr = isNaN( month ) || month < 1 || month > 12 ? '--' : pad( month, 2 );
+	const dayStr = isNaN( day ) || day < 1 || day > 31 ? '--' : pad( day, 2 );
 	
 	// 如果月或日无效，返回部分占位符
-	if (monthStr === '--' || dayStr === '--') {
-		return `${yearStr}/--/--`;
+	if ( monthStr === '--' || dayStr === '--' ) {
+		return `${ yearStr }/--/--`;
 	}
 	
-	return `${yearStr}-${monthStr}-${dayStr}`;
+	return `${ yearStr }-${ monthStr }-${ dayStr }`;
 }

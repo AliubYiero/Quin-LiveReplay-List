@@ -5,15 +5,18 @@ import { group } from 'radash';
 import { formatTime } from './formatTime.ts';
 import { SpellingCorrection } from './SpellingCorrection.ts';
 import { formatDate } from './formatDate.ts';
+import { AidMapperStore } from '../../store/AidMapperStore.ts';
 
 /**
  * 生成 Markdown 文件
  */
 export const generateMarkdownRecord = (
+	uid: number,
 	userName: string,
 	configStore: RecordStore,
 ) => {
 	const spellingCorrection = new SpellingCorrection();
+	const aidMapper = new AidMapperStore( uid );
 	const liverMapper = group( configStore.recordList, item => item.liver );
 	// 更新分组下的每个文档
 	for ( let liver in liverMapper ) {
@@ -27,6 +30,10 @@ export const generateMarkdownRecord = (
 		
 		// 生成单个游戏标记的记录
 		const playGameRecord: PlayGameRecordItem[] = recordList.flatMap( record => {
+			const correctionPlayGame = aidMapper.getGameList( record.aid );
+			if ( correctionPlayGame?.length ) {
+				record.playGame = correctionPlayGame;
+			}
 			return record.playGame.map( game => ( {
 				...record,
 				playGame: spellingCorrection.correct( game ),
@@ -49,10 +56,10 @@ export const generateMarkdownRecord = (
 ${ Object.entries( gameList ).map( ( [ game, infoList ] ) => `
 ## ${ game }
 
-| 游戏名称 | 直播日期 | 时长 | 集数   | 标题                                                         |
-| -------- | -------- | ---- | ------ | ------------------------------------------------------------ |
+| 游戏名称 | 直播日期 | 时长 | 集数   | 标题 | aid |
+| -------- | :------ | :---: | :---: | --- | :-: |
 ${ infoList!.reverse().map( ( info, index ) => `
-| ${ game } | ${ formatDate( info.liveTime ) } | ${ formatTime( info.liveDuration ) } | Part ${ index + 1 } | [${ info.title }](https://www.bilibili.com/video/av${ info.aid }/) |
+| ${ game } | ${ formatDate( info.liveTime ) } | ${ formatTime( info.liveDuration ) } | Part ${ index + 1 } | [${ info.title }](https://www.bilibili.com/video/av${ info.aid }/) | ${ info.aid } |
 `.trim() ).join( '\n' ) }
 `.trim() ).join( '\n\n' ) }
 

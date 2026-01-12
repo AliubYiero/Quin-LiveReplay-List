@@ -23,3 +23,4 @@ export const writeMarkdown = ( info: MarkdownInfo ) => {
 	const markdownFilePath = join( liverDirPath, `${ info.liver }直播回放列表(from ${ info.uploader }).md` );
 	writeFileSync( markdownFilePath, info.content, 'utf-8' );
 };
+ 

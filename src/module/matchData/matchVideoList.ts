@@ -1,4 +1,4 @@
-import { RecordItem, UnparseRecordItem } from '../../interface/IRecord.ts';
+import { RecordItem } from '../../interface/IRecord.ts';
 import { RecordStore } from '../../store/RecordStore.ts';
 import { getIncrementalVideoList } from './getIncrementalVideoList.ts';
 import { IParseItem } from './handleParseMapper.ts';
