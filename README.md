@@ -1,4 +1,4 @@
-# 猛男寨直播录播分组列表
+# Bilibili UP直播录播分组列表
 
 ## 分组目录
 
@@ -6,6 +6,8 @@
 	- [Mr.Quin直播回放列表(from Mr.Quin)](./docx/Mr.Quin/Mr.Quin%E7%9B%B4%E6%92%AD%E5%9B%9E%E6%94%BE%E5%88%97%E8%A1%A8(from%20Mr.Quin).md)
 	- [Mr.Quin直播回放列表(from 胧黑)](./docx/Mr.Quin/Mr.Quin%E7%9B%B4%E6%92%AD%E5%9B%9E%E6%94%BE%E5%88%97%E8%A1%A8(from%20%E8%83%A7%E9%BB%91).md)
 	- [Mr.Quin直播回放列表(from 自行车二层)](./docx/Mr.Quin/Mr.Quin%E7%9B%B4%E6%92%AD%E5%9B%9E%E6%94%BE%E5%88%97%E8%A1%A8(from%20%E8%87%AA%E8%A1%8C%E8%BD%A6%E4%BA%8C%E5%B1%82).md)
+- [[**勾檀Mayumi**]](./docx/勾檀Mayumi):
+	- [勾檀Mayumi直播回放列表(from 勾檀Mayumi)](./docx/%E5%8B%BE%E6%AA%80Mayumi/%E5%8B%BE%E6%AA%80Mayumi%E7%9B%B4%E6%92%AD%E5%9B%9E%E6%94%BE%E5%88%97%E8%A1%A8(from%20%E5%8B%BE%E6%AA%80Mayumi).md)
 - [[**北极熊剩饭**]](./docx/北极熊剩饭):
 	- [北极熊剩饭直播回放列表(from 自行车二层)](./docx/%E5%8C%97%E6%9E%81%E7%86%8A%E5%89%A9%E9%A5%AD/%E5%8C%97%E6%9E%81%E7%86%8A%E5%89%A9%E9%A5%AD%E7%9B%B4%E6%92%AD%E5%9B%9E%E6%94%BE%E5%88%97%E8%A1%A8(from%20%E8%87%AA%E8%A1%8C%E8%BD%A6%E4%BA%8C%E5%B1%82).md)
 - [[**机智的肯尼**]](./docx/机智的肯尼):
@@ -17,7 +19,7 @@
 
 ## 项目描述
 
-本项目通过识别录播Man上传的带游戏名的直播录像视频, 生成如以下形式的分组列表:
+本项目通过识别本人/录播Man上传的带游戏名的直播录像视频, 生成如以下形式的分组列表:
 
 > ## Draw & Guess/你画我猜
 >
@@ -26,11 +28,12 @@
 > | Draw & Guess/你画我猜 | 2023/5/2  | 03:20:18 | Part 1 | [【Mr.Quin】2023年5月2日《红霞岛》+《Draw & Guess/你画我猜》弹幕录像](https://www.bilibili.com/video/av570720260/) |
 > | Draw & Guess/你画我猜 | 2023/8/31 | 03:56:11 | Part 2 | [【Mr.Quin】2023年8月31日《装甲核心6/机战佣兵VI 境界天火》+《Draw & Guess/你画我猜》弹幕录像](https://www.bilibili.com/video/av532943857/) |
 
-## 支持的录播Man
+## 本项目监听对象
 
 - Mr.Quin: https://space.bilibili.com/15810
 - 胧黑: https://space.bilibili.com/245335
 - 自行车二层: https://space.bilibili.com/1400350754
+- 勾檀Mayumi: https://space.bilibili.com/690608693
 
 
 
@@ -64,7 +67,7 @@ interface RecordItem {
 	6. 按照将同一个游戏分组下的所有数据, 按直播时间升序 (从最旧到最新) 顺序排序
 	7. 将数据生成为 Markdown 文本, 写入对应的文档中
 
-> 游戏分组取决于录播Man写入的游戏名. 就算是同一个游戏, 如果打错字会识别为不同的游戏.
+> 游戏分组取决于视频标题写入的游戏名. 就算是同一个游戏, 如果打错字会识别为不同的游戏.
 >
 > 对于这部分错误内容, 有一个简单的纠错系统: [纠错](#纠错)
 

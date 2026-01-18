@@ -107,4 +107,34 @@ export const handleParseMapper: IParseItem[] = [
 			};
 		},
 	},
+	{
+		uid: 690608693,
+		userName: '勾檀Mayumi',
+		onParse: async ( item: UnparseRecordItem ) => {
+			// 只监听直播回放
+			if ( !item.title.includes( '【直播回放】' ) ) return null;
+			
+			// 提取直播时间
+			const liveTime = extractLiveDate( item.title, item.publishTime );
+			
+			// 提取直播游戏
+			const prefixLength = '【直播回放】'.length;
+			const playGameMatches = item.title.slice( prefixLength )
+				.match( /(?<=【)[^】]+(?=】)/g );
+			const playGameList: string[] = [];
+			if ( !playGameMatches ) {
+				playGameList.push( '杂谈' );
+			}
+			else {
+				playGameList.push( ...playGameMatches[ 0 ].split( '+' ).map( item => item.trim() ) );
+			}
+			
+			return {
+				...item,
+				liveTime: liveTime,
+				playGame: playGameList,
+				liver: '勾檀Mayumi',
+			};
+		},
+	},
 ];
