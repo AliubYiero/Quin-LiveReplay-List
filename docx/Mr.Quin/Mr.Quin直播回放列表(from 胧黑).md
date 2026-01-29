@@ -3,12 +3,27 @@
 | 主播 | Mr.Quin |
 | -------------------- | ------------------------------------------------------------ |
 | **上传者** | **胧黑** |
-| **数据更新时间** | **2026-01-28** |
-| **累积计入视频数量** | **841** |
+| **数据更新时间** | **2026-01-29** |
+| **累积计入视频数量** | **842** |
 | **最旧视频** | [【Mr.Quin】2022年8月17日《异度之刃3》弹幕录像](https://www.bilibili.com/video/av644671524/) |
-| **最新视频** | [【Mr.Quin】2026年1月26日《明日方舟：终末地》全球公测 弹幕录像](https://www.bilibili.com/video/av115963731117086/) |
+| **最新视频** | [【Mr.Quin】2026年1月28日《千禧梦》+《Party Animals/猛兽派对》弹幕录像](https://www.bilibili.com/video/av115974938365929/) |
 
 ---
+
+## 千禧梦
+
+| 游戏名称 | 直播日期 | 时长 | 集数   | 标题 | aid |
+| -------- | :------ | :---: | :---: | --- | :-: |
+| 千禧梦 | 2026-01-28 | 05:21:30 | Part 1 | [【Mr.Quin】2026年1月28日《千禧梦》+《Party Animals/猛兽派对》弹幕录像](https://www.bilibili.com/video/av115974938365929/) | 115974938365929 |
+
+## Party Animals/猛兽派对
+
+| 游戏名称 | 直播日期 | 时长 | 集数   | 标题 | aid |
+| -------- | :------ | :---: | :---: | --- | :-: |
+| Party Animals/猛兽派对 | 2023-09-08 | 03:08:06 | Part 1 | [【Mr.Quin】2023年9月8日《Party Animals/猛兽派对》弹幕录像](https://www.bilibili.com/video/av745789144/) | 745789144 |
+| Party Animals/猛兽派对 | 2023-09-20 | 04:11:59 | Part 2 | [【Mr.Quin】2023年9月20日《Party Animals/猛兽派对》弹幕录像](https://www.bilibili.com/video/av233653402/) | 233653402 |
+| Party Animals/猛兽派对 | 2023-09-24 | 06:25:10 | Part 3 | [【Mr.Quin】2023年9月24日《Brotato/土豆兄弟》+《Party Animals/猛兽派对》弹幕录像](https://www.bilibili.com/video/av406414804/) | 406414804 |
+| Party Animals/猛兽派对 | 2026-01-28 | 05:21:30 | Part 4 | [【Mr.Quin】2026年1月28日《千禧梦》+《Party Animals/猛兽派对》弹幕录像](https://www.bilibili.com/video/av115974938365929/) | 115974938365929 |
 
 ## 明日方舟：终末地
 
@@ -2230,14 +2245,6 @@
 | 游戏名称 | 直播日期 | 时长 | 集数   | 标题 | aid |
 | -------- | :------ | :---: | :---: | --- | :-: |
 | 赛博朋克2077 | 2023-09-25 | 04:49:40 | Part 1 | [【Mr.Quin】2023年9月25日《赛博朋克2077》DLC 往日之影 弹幕录像](https://www.bilibili.com/video/av233912827/) | 233912827 |
-
-## Party Animals/猛兽派对
-
-| 游戏名称 | 直播日期 | 时长 | 集数   | 标题 | aid |
-| -------- | :------ | :---: | :---: | --- | :-: |
-| Party Animals/猛兽派对 | 2023-09-08 | 03:08:06 | Part 1 | [【Mr.Quin】2023年9月8日《Party Animals/猛兽派对》弹幕录像](https://www.bilibili.com/video/av745789144/) | 745789144 |
-| Party Animals/猛兽派对 | 2023-09-20 | 04:11:59 | Part 2 | [【Mr.Quin】2023年9月20日《Party Animals/猛兽派对》弹幕录像](https://www.bilibili.com/video/av233653402/) | 233653402 |
-| Party Animals/猛兽派对 | 2023-09-24 | 06:25:10 | Part 3 | [【Mr.Quin】2023年9月24日《Brotato/土豆兄弟》+《Party Animals/猛兽派对》弹幕录像](https://www.bilibili.com/video/av406414804/) | 406414804 |
 
 ## PAYDAY 3/收获日3
 
