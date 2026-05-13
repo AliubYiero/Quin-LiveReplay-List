@@ -3,12 +3,29 @@
 | 主播 | Mr.Quin |
 | -------------------- | ------------------------------------------------------------ |
 | **上传者** | **胧黑** |
-| **数据更新时间** | **2026-05-12** |
-| **累积计入视频数量** | **911** |
+| **数据更新时间** | **2026-05-13** |
+| **累积计入视频数量** | **912** |
 | **最旧视频** | [【Mr.Quin】2022年8月17日《异度之刃3》弹幕录像](https://www.bilibili.com/video/av644671524/) |
-| **最新视频** | [【Mr.Quin】2026年5月9日《GONE Fishing / 去钓鱼喽》弹幕录像（不全，缺最后一小时 NBA 2K26 部分）](https://www.bilibili.com/video/av116547041364666/) |
+| **最新视频** | [【Mr.Quin】2026年5月12日《Outbound / 拾光旅人》+《Slay the Spire 2 / 杀戮尖塔2》弹幕录像](https://www.bilibili.com/video/av116563701138875/) |
 
 ---
+
+## Outbound / 拾光旅人
+
+| 游戏名称 | 直播日期 | 时长 | 集数   | 标题 | aid |
+| -------- | :------ | :---: | :---: | --- | :-: |
+| Outbound / 拾光旅人 | 2026-05-12 | 04:24:03 | Part 1 | [【Mr.Quin】2026年5月12日《Outbound / 拾光旅人》+《Slay the Spire 2 / 杀戮尖塔2》弹幕录像](https://www.bilibili.com/video/av116563701138875/) | 116563701138875 |
+
+## Slay the Spire 2 / 杀戮尖塔2
+
+| 游戏名称 | 直播日期 | 时长 | 集数   | 标题 | aid |
+| -------- | :------ | :---: | :---: | --- | :-: |
+| Slay the Spire 2 / 杀戮尖塔2 | 2026-03-07 | 05:05:22 | Part 1 | [【Mr.Quin】2026年3月7日《Slay the Spire 2 / 杀戮尖塔2》+《失落星船：马拉松》弹幕录像](https://www.bilibili.com/video/av116190055760470/) | 116190055760470 |
+| Slay the Spire 2 / 杀戮尖塔2 | 2026-03-08 | 04:41:27 | Part 2 | [【Mr.Quin】2026年3月8日《失落星船：马拉松》+《Slay the Spire 2 / 杀戮尖塔2》弹幕录像](https://www.bilibili.com/video/av116195793569126/) | 116195793569126 |
+| Slay the Spire 2 / 杀戮尖塔2 | 2026-03-09 | 03:28:37 | Part 3 | [【Mr.Quin】2026年3月9日《Slay the Spire 2 / 杀戮尖塔2》弹幕录像](https://www.bilibili.com/video/av116201313275546/) | 116201313275546 |
+| Slay the Spire 2 / 杀戮尖塔2 | 2026-03-11 | 04:01:14 | Part 4 | [【Mr.Quin】2026年3月11日《Slay the Spire 2 / 杀戮尖塔2》弹幕录像](https://www.bilibili.com/video/av116212688226052/) | 116212688226052 |
+| Slay the Spire 2 / 杀戮尖塔2 | 2026-04-01 | 05:14:16 | Part 5 | [【Mr.Quin】2026年4月1日《萌族纪元》+《Slay the Spire 2 / 杀戮尖塔2》+《洛克王国：世界》弹幕录像](https://www.bilibili.com/video/av116332511102648/) | 116332511102648 |
+| Slay the Spire 2 / 杀戮尖塔2 | 2026-05-12 | 04:24:03 | Part 6 | [【Mr.Quin】2026年5月12日《Outbound / 拾光旅人》+《Slay the Spire 2 / 杀戮尖塔2》弹幕录像](https://www.bilibili.com/video/av116563701138875/) | 116563701138875 |
 
 ## GONE Fishing / 去钓鱼喽
 
@@ -184,16 +201,6 @@
 | 游戏名称 | 直播日期 | 时长 | 集数   | 标题 | aid |
 | -------- | :------ | :---: | :---: | --- | :-: |
 | 萌族纪元 | 2026-04-01 | 05:14:16 | Part 1 | [【Mr.Quin】2026年4月1日《萌族纪元》+《Slay the Spire 2 / 杀戮尖塔2》+《洛克王国：世界》弹幕录像](https://www.bilibili.com/video/av116332511102648/) | 116332511102648 |
-
-## Slay the Spire 2 / 杀戮尖塔2
-
-| 游戏名称 | 直播日期 | 时长 | 集数   | 标题 | aid |
-| -------- | :------ | :---: | :---: | --- | :-: |
-| Slay the Spire 2 / 杀戮尖塔2 | 2026-03-07 | 05:05:22 | Part 1 | [【Mr.Quin】2026年3月7日《Slay the Spire 2 / 杀戮尖塔2》+《失落星船：马拉松》弹幕录像](https://www.bilibili.com/video/av116190055760470/) | 116190055760470 |
-| Slay the Spire 2 / 杀戮尖塔2 | 2026-03-08 | 04:41:27 | Part 2 | [【Mr.Quin】2026年3月8日《失落星船：马拉松》+《Slay the Spire 2 / 杀戮尖塔2》弹幕录像](https://www.bilibili.com/video/av116195793569126/) | 116195793569126 |
-| Slay the Spire 2 / 杀戮尖塔2 | 2026-03-09 | 03:28:37 | Part 3 | [【Mr.Quin】2026年3月9日《Slay the Spire 2 / 杀戮尖塔2》弹幕录像](https://www.bilibili.com/video/av116201313275546/) | 116201313275546 |
-| Slay the Spire 2 / 杀戮尖塔2 | 2026-03-11 | 04:01:14 | Part 4 | [【Mr.Quin】2026年3月11日《Slay the Spire 2 / 杀戮尖塔2》弹幕录像](https://www.bilibili.com/video/av116212688226052/) | 116212688226052 |
-| Slay the Spire 2 / 杀戮尖塔2 | 2026-04-01 | 05:14:16 | Part 5 | [【Mr.Quin】2026年4月1日《萌族纪元》+《Slay the Spire 2 / 杀戮尖塔2》+《洛克王国：世界》弹幕录像](https://www.bilibili.com/video/av116332511102648/) | 116332511102648 |
 
 ## AI LIMIT/无限机兵
 
